@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T48 Admin</title>
+    <link href="assets/img/t46.png" rel="apple-touch-icon">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Template Main CSS File -->
+    <link href="css/admin-style.css" rel="stylesheet">
+</head>
+<body class="container">
+    
+    <div class="d-flex">
+        <h2>Traction 48 Admin Section</h2>
+        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">Log in</button>
+    </div>
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog modal-login">      
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Sign in</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button> 
+            </div>
+            <div class="modal-body">
+                <form action="/examples/actions/confirmation.php" method="post">
+					<div class="form-group">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="fa fa-user"></i></span>
+							<input type="text" class="form-control" name="username" placeholder="Username" required="required">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+							<input type="text" class="form-control" name="password" placeholder="Password" required="required">
+						</div>
+					</div>
+					<div class="form-group">
+						<button type="submit" class="btn btn-primary btn-block btn-lg">Sign In</button>
+					</div>
+					<p class="hint-text"><a href="#">Forgot Password?</a></p>
+				</form>
+            </div>
+            <div class="modal-footer">T r a c t i o n #48</div>
+		</div>
+        </div>
+    </div>
+</body>
+</html>
