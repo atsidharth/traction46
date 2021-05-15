@@ -201,7 +201,7 @@
   });
 
   /**
-   * Porfolio isotope and filter
+   * Porfolio isotope and filter 
    */
   window.addEventListener('load', () => {
     let portfolioContainer = select('.portfolio-container');
@@ -272,16 +272,5 @@
     }
   });
 
-  /**
-   * Animation on scroll
-   */
-  window.addEventListener('load', () => {
-    AOS.init({
-      duration: 1000,
-      easing: "ease-in-out",
-      once: true,
-      mirror: false
-    });
-  });
 
 })()
